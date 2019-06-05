@@ -10,7 +10,7 @@ class HomeController extends Controller {
 	public function index() {   
     $this->view->data['banner']         = $this->modelHome->getBanner();
     $this->view->data['popup']          = $this->modelHome->getPopup();
-   
+    
     $this->view->data['product_hot']    = $this->modelHome->getProdcutHot();
     $this->view->data['Trongnuoc']      = $this->modelHome->getTourhome(',1,',0,5);
     $this->view->data['Nuocngoai']      = $this->modelHome->getTourhome(',2,',0,5);
@@ -24,7 +24,7 @@ class HomeController extends Controller {
 	$this->view->title       = isset($_web['settings']['seo_title']) ? stripcslashes($_web['settings']['seo_title']) : '';
 	$this->view->description = isset($_web['settings']['seo_description']) ? stripcslashes($_web['settings']['seo_description']) : '';
 	$this->view->keywords    = isset($_web['settings']['seo_keywords']) ? stripcslashes($_web['settings']['seo_keywords']) : '';
-	$this->view->author      = "Mr.Toán - 0987687869";
+	$this->view->author      = "Mr.Toán - 09876878699";
 	$this->view->render('index');
 	}
  
